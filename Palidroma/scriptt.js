@@ -21,7 +21,7 @@ function checkPalindroma (userWord) {
 const result = checkPalindroma(userWord);
 
 // print the result in console
-// console.log(result);
+console.log(result);
 
 
 
