@@ -39,7 +39,7 @@ function pariODispari (totalNumber) {
 const totalNumberValue = pariODispari(totalNumber);
 console.log("La somma è: " + totalNumberValue);
 
-// function to call who is the winner
+// function to get the winner
 function whoWhin (userChoice, totalNumberValue) {
     if (userChoice === totalNumberValue) {
         return "Congratulazioni, hai vinto!"
@@ -49,7 +49,7 @@ function whoWhin (userChoice, totalNumberValue) {
 }
 
 // call the function 
-// const result = whoWhin(userChoice, totalNumberValue);
+const result = whoWhin(userChoice, totalNumberValue);
 
 // print the result
 // console.log(result);
