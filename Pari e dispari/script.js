@@ -16,7 +16,8 @@ function randomNumbMinMax (min, max) {
     return randomNum;
 }
 
-// let computerNumber = randomNumbMinMax(1, 5);
+// call the function
+let computerNumber = randomNumbMinMax(1, 5);
 
 // total number
 
