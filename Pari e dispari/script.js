@@ -5,10 +5,10 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (u
 */
 
 // promt user number
-const userNumber = prompt("Inserisci il tuo numero da 1 a 5");
+const userNumber = parseInt(prompt("Inserisci il tuo numero da 1 a 5"));
 
 // prompt user choice
-const userhoice = prompt("Scrivi pari o dispari?");
+const userChoice = prompt("Scrivi pari o dispari?");
 
 // function to generate random number between min and max (both included)
 function randomNumbMinMax (min, max) {
@@ -20,5 +20,15 @@ function randomNumbMinMax (min, max) {
 let computerNumber = randomNumbMinMax(1, 5);
 
 // total number
+const totalNumber = userNumber + computerNumber;
+
+
+
+
 
 // function to select the winner
+// function whoWin (totalNumber) {
+//     if (totalNumber % 2 === 0 && userChoice === "pari") {
+//         console.log("hai vinto");
+//     }
+// }
