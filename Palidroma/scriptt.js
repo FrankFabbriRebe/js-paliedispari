@@ -18,7 +18,7 @@ function checkPalindroma (userWord) {
 }
 
 // call function
-// const result = checkPalindroma(userWord);
+const result = checkPalindroma(userWord);
 
 // print the result in console
 // console.log(result);
