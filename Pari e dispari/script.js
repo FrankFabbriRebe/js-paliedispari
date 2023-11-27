@@ -27,18 +27,32 @@ const totalNumber = userNumber + computerNumber;
 console.log("Il totale è: " + totalNumber);
 
 // function to check if total number is even or odd
-function evenOrOdd (totalNumber) {
+function pariODispari (totalNumber) {
     if (totalNumber % 2 === 0) {
-        return "even"
+        return "pari"
     } else {
-        return "odd"
+        return "dispari"
     }
 }
 
 // call the function
-const totalNumberValue = evenOrOdd(totalNumber);
+const totalNumberValue = pariODispari(totalNumber);
+console.log("La somma è: " + totalNumberValue);
 
+// function to call who is the winner
+function whoWhin (userChoice, totalNumberValue) {
+    if (userChoice === totalNumberValue) {
+        return "Congratulazioni, hai vinto!"
+    } else {
+        return "Mi dispiace, hai perso!"
+    }
+}
 
+// call the function 
+// const result = whoWhin(userChoice, totalNumberValue);
+
+// print the result
+// console.log(result);
 
 
 
