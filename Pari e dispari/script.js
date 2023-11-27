@@ -11,12 +11,12 @@ const userNumber = prompt("Inserisci il tuo numero da 1 a 5");
 const userhoice = prompt("Scrivi pari o dispari?");
 
 // function to generate random number between min and max (both included)
-// function randomNumbMinMax (min, max) {
-//     const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
-//     return randomNum;
-// }
+function randomNumbMinMax (min, max) {
+    const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNum;
+}
 
-// let newRandomNum = randomNumbMinMax(1, 5);
+// let computerNumber = randomNumbMinMax(1, 5);
 
 // total number
 
