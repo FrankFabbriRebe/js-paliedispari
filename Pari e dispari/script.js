@@ -52,7 +52,7 @@ function whoWhin (userChoice, totalNumberValue) {
 const result = whoWhin(userChoice, totalNumberValue);
 
 // print the result
-// console.log(result);
+console.log(result);
 
 
 
