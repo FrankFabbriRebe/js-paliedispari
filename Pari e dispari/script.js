@@ -12,19 +12,32 @@ console.log("Il tuo numero è: "  + userNumber);
 const userChoice = prompt("Scrivi pari o dispari?");
 console.log("La tua scelta è: " + userChoice);
 
-// function to generate random number between min and max (both included)
-function randomNumbMinMax (min, max) {
-    const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
-    return randomNum;
-}
-
-// call the function
+// call the function to generate random number between min and max (both included)
 let computerNumber = randomNumbMinMax(1, 5);
 console.log("Il numero del computer è: " + computerNumber);
 
 // total number
 const totalNumber = userNumber + computerNumber;
 console.log("Il totale è: " + totalNumber);
+
+// call the function to check if total number is even or odd
+const totalNumberValue = pariODispari(totalNumber);
+console.log("La somma è: " + totalNumberValue);
+
+// call the function to get the winner
+const result = whoWhin(userChoice, totalNumberValue);
+
+// print the result
+console.log(result);
+
+
+// FUNCTIONS
+
+// function to generate random number between min and max (both included)
+function randomNumbMinMax (min, max) {
+    const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNum;
+}
 
 // function to check if total number is even or odd
 function pariODispari (totalNumber) {
@@ -35,41 +48,11 @@ function pariODispari (totalNumber) {
     }
 }
 
-// call the function
-const totalNumberValue = pariODispari(totalNumber);
-console.log("La somma è: " + totalNumberValue);
-
 // function to get the winner
-function whoWhin (userChoice, totalNumberValue) {
+function whoWhin(userChoice, totalNumberValue) {
     if (userChoice === totalNumberValue) {
-        return "Congratulazioni, hai vinto!"
+        return "Congratulazioni, hai vinto!";
     } else {
-        return "Mi dispiace, hai perso!"
+        return "Mi dispiace, hai perso!";
     }
 }
-
-// call the function 
-const result = whoWhin(userChoice, totalNumberValue);
-
-// print the result
-console.log(result);
-
-
-
-
-
-
-// console.log(totalNumberValue);
-
-// console.log(evenOrOdd(totalNumber));
-
-// function to select the winner
-/*
-function whoWin (totalNumber, userChoice) {
-    if (totalNumber % 2 === 0 && userChoice === "pari") {
-         return "Congratulazioni hai vinto"
-    } else if {
-
-    }
-}
-*/
