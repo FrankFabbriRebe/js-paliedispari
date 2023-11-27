@@ -8,7 +8,7 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (u
 const userNumber = prompt("Inserisci il tuo numero da 1 a 5");
 
 // prompt user choice
-// const userhoice = prompt("Scrivi pari o dispari?");
+const userhoice = prompt("Scrivi pari o dispari?");
 
 // function to generate random number between min and max (both included)
 // function randomNumbMinMax (min, max) {
