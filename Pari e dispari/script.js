@@ -35,6 +35,18 @@ function evenOrOdd (totalNumber) {
     }
 }
 
+// call the function
+const totalNumberValue = evenOrOdd(totalNumber);
+
+
+
+
+
+
+
+
+// console.log(totalNumberValue);
+
 // console.log(evenOrOdd(totalNumber));
 
 // function to select the winner
